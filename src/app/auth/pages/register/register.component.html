@@ -1,0 +1,45 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div class="m-5">
+      <h1 class="text-center w-100 f-3">Registrate</h1> 
+
+      <div class="mb-3">
+        <label for="name" class="form-label"><b>Nombres y apellidos</b></label>
+        <input type="text" class="form-control input" id="name" placeholder="Nombres para el contacto" formControlName="name">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="proffesion" class="form-label"><b>Profesión</b></label>
+        <input type="text" class="form-control input" id="proffesion" placeholder="Profesión del contacto" formControlName="proffesion">
+      </div>
+
+      <div class="mb-3">
+        <label for="cellphone" class="form-label"><b>Número de teléfono</b></label>
+        <input type="text" class="form-control input" id="cellphone"  placeholder="Numero telefonico del contacto" formControlName="cellphone">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label"><b>Correo electrónico</b></label>
+        <input type="email" class="form-control input" id="email" placeholder="Correo electrónico del contacto" formControlName="email">
+      </div>
+
+      <!-- {<div class="mb-3">
+        <label for="image" class="form-label"><b>Foto del perfil</b></label>
+        <input type="file" class="form-control inputfile" placeholder="Seleccione un archivo" id="image">
+      </div> } -->
+
+      <div class="mb-3">
+        <label for="password" class="form-label"><b>Password</b></label>
+        <input type="password" class="form-control input" id="password" placeholder="Contraseña" formControlName="password">
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary" type="submit"[disabled]="registerForm.invalid">Entrar</button>
+      </div>
+  
+    </div>
+  
+  </form>
+   
+

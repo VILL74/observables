@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <div class="m-5">
+      <h1 class="text-center w-100 f-3">Inicio de sesión</h1>
+      <div class="text-center my-5">
+        <img src="https://placehold.co/400" alt="fondo" class="w-50 rounded-circle">
+  
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email">
+      </div>
+  
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" nema placeholder="******" formControlName="password">
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary" type="submit"[disabled]="loginForm.invalid">Entrar</button>
+      </div>
+  
+    </div>
+  
+  </form>
+   
