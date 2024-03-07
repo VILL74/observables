@@ -18,10 +18,21 @@
       </div>
 
       <div class="text-center">
-        <button class="btn btn-primary" type="submit"[disabled]="loginForm.invalid">Entrar</button>
+        <button class="btn btn-primary" type="submit">Entrar</button>
       </div>
   
+      <!-- [disabled]="loginForm.invalid" -->
     </div>
   
   </form>
+
+  <div class="m-5">
+    <div class="text-center">
+      <button class="btn btn-primary m-1" type="submit" (click)="primary()">Primary</button>
+      <button class="btn btn-warning m-1" type="submit" (click)="warning()">Warning</button>
+      <button class="btn btn-success m-1" type="submit" (click)="success()">Success</button>
+      <button class="btn btn-danger m-1" type="submit" (click)="danger()">Danger</button>
+    </div>
+
+  </div>
    
